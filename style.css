@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:ital,wght@0,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.navbar .logoBox .logo{
+    max-width: 90px;
+}
+
+.navbar .menuBox li{
+    float: left;
+    padding: 15px;
+    list-style: none;
+}
+
+.navbar .menuBox li a{
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.secOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 3%;
+}
+
+.secOne .textBox{
+    padding: 0 3%;
+}
+
+.secOne .textBox h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+
+.secOne .textBox p{
+    padding: 5% 0;
+    padding-right: 15%;
+}
+
+.secOne .textBox input{
+    padding: 12px 20px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    width: 52%;
+}
+
+.secOne .textBox button{
+    padding: 2.1% 12%;
+    border-radius: 4px;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+}
+
+.secOne .illustration1 img{
+    max-width: 100%;
+}
+
+.secOne .illustration1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secTwo{
+    display: flex;
+    padding: 0 6%;
+}
+
+.secTwo .textBoxTwo h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2.1em;
+}
+
+.secTwo .illustration2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.secTwo .illustration2 img{
+    max-width: 60%;
+}
