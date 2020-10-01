@@ -11,6 +11,7 @@ body{
     font-weight: 400;
 }
 
+/******* NAVBAR ********/
 .navbar{
     position: absolute;
     top: 0;
@@ -39,6 +40,7 @@ body{
     font-weight: 400;
 }
 
+/******* FIRST SECTION ********/
 .secOne{
     display: flex;
     justify-content: center;
@@ -66,17 +68,18 @@ body{
 }
 
 .secOne .textBox input{
-    padding: 12px 20px;
+    padding: 17px 20px;
     border-radius: 2px;
     border: 1px solid #000;
     width: 52%;
 }
 
 .secOne .textBox button{
-    padding: 2.1% 12%;
+    padding: 3% 12%;
     border-radius: 4px;
     background-color: hsl(224, 93%, 58%);
     color: #fff;
+    border: none;
 }
 
 .secOne .illustration1 img{
@@ -176,7 +179,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: hsl(238, 22%, 44%);
-    padding: 8% 6%;
+    padding: 7% 6%;
 }
 
 .sign .textBoxThree h1{
@@ -190,4 +193,78 @@ body{
     color: #fff;
     margin-top: 25px;
     margin-right: 15%;
+}
+
+.sign .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.sign .form input{
+    padding: 3% 5%;
+    border-radius: 3px;
+    border: 1px solid;
+}
+
+.sign .form button{
+    width: 38%;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border: none;
+    padding: 3% 0;
+    margin-top: 15px;
+}
+
+/******* FOOTER ********/
+footer{
+    padding: 5% 6%;
+    background-color: hsl(243, 87%, 12%);
+}
+
+footer .logoFooter{
+    width: 15%;
+    margin: 1% 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer .contact li{
+    color: #fff;
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer .contact img{
+    margin-right: 20px;
+}
+
+.footer .info li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer .info a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .sci li{
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 3%;
+    list-style: none;
+    margin: 0 6px;
+}
+
+.footer .sci i{
+    color: #fff;
+    width: 16px;
+    text-align: center;
 }
