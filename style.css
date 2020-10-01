@@ -45,6 +45,9 @@ body{
     align-items: center;
     min-height: 100vh;
     padding: 0 3%;
+    background: url(images/bg-curve-desktop.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .secOne .textBox{
@@ -54,7 +57,7 @@ body{
 .secOne .textBox h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 2.1em;
+    font-size: 2.5em;
 }
 
 .secOne .textBox p{
@@ -86,23 +89,105 @@ body{
     align-items: center;
 }
 
+/******* SECOND SECTION ********/
+
 .secTwo{
     display: flex;
-    padding: 0 6%;
+    align-items: center;
+    padding: 5% 6%;
+    background-color: #F9F8FE;
 }
 
-.secTwo .textBoxTwo h2{
+.secTwo .textBoxTwo h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 2.1em;
+    font-size: 2.5em;
+}
+
+.secTwo .textBoxTwo a{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.secTwo .textBoxTwo p{
+    color: hsl(243, 87%, 12%);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 25%;
+}
+
+.secTwo .textBoxTwo img{
+    width: 3%;
+    margin-left: 5px;
+}
+
+.secTwo .quote{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 35px;
+    width: 45%;
+    margin-top: 50px;
+}
+
+.secTwo .quote .icon-quotes{
+    width: 15px;
+}
+
+.secTwo .quote p{
+    font-size: 0.9em;
+    margin: 8% 0;
+}
+
+.secTwo .quote .profil{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.secTwo .quote .avatar{
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.secTwo .quote .profil h2{
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+.secTwo .profil .job{
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .secTwo .illustration2{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    max-width: 600px;
 }
 
 .secTwo .illustration2 img{
-    max-width: 60%;
+    max-width: 120%;
+}
+
+/******* SIGN SECTION ********/
+.sign{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(238, 22%, 44%);
+    padding: 8% 6%;
+}
+
+.sign .textBoxThree h1{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.sign .textBoxThree p{
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 15%;
 }
