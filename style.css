@@ -57,8 +57,6 @@ body{
 }
 
 .secOne .textBox h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 2.5em;
 }
 
@@ -102,8 +100,6 @@ body{
 }
 
 .secTwo .textBoxTwo h1{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
     font-size: 2.5em;
 }
 
@@ -151,6 +147,7 @@ body{
     width: 80%;
     border-radius: 50%;
     margin-top: 10px;
+    margin-left: 0;
 }
 
 .secTwo .quote .profil h2{
@@ -267,4 +264,207 @@ footer .logoFooter{
     color: #fff;
     width: 16px;
     text-align: center;
+}
+
+::-webkit-input-placeholder{
+    opacity: 0.5;
+}
+
+/*** FORMAT MOBILE ****/
+
+@media screen and (max-width: 375px){
+
+    /******* NAVBAR ********/
+    .navbar {
+        position: initial;
+        padding: 5% 6%;
+    }
+
+    .navbar .logoBox .logo {
+        max-width: 80px;
+        margin-top: 10px;
+    }
+
+    .navbar .menuBox li {
+        float: left;
+        padding: 8px;
+        list-style: none;
+    }
+
+    .navbar .menuBox li a{
+        font-size: 0.8em;
+    }
+
+    /******* FIRST SECTION ********/
+
+    .secOne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 30% 3%;
+        background: url(images/bg-curve-mobile.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .secOne .illustration1 img {
+        max-width: 80%;
+    }
+
+    .secOne .textBox h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    .secOne .textBox p {
+        padding: 10% 1%;
+        text-align: center;
+    }
+
+    .secOne .textBox input {
+        padding: 17px 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .secOne .textBox button {
+        padding: 5% 12%;
+        border-radius: 4px;
+        background-color: hsl(224, 93%, 58%);
+        color: #fff;
+        font-size: 1em;
+        border: none;
+        width: 100%;
+    }
+
+    /******* SECOND SECTION ********/
+
+    .secTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: 25% 6%;
+        background-color: #F9F8FE;
+    }
+
+    .secTwo .textBoxTwo{
+        text-align: center;
+    }
+
+    .secTwo .textBoxTwo h1 {
+        font-size: 1.1em;
+    }
+
+    .secTwo .textBoxTwo p {
+        color: hsl(243, 87%, 12%);
+        margin-right: 0;
+        text-align: initial;
+    }
+
+    .secTwo .textBoxTwo img {
+        width: 6%;
+        margin-left: 3%;
+    }
+
+    .secTwo .textBoxTwo a {
+        padding: 2% 0;
+    }
+
+    .secTwo .quote {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 35px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .secTwo .quote .icon-quotes {
+        position: absolute;
+        left: 12%;
+    }
+
+    .secTwo .quote .profil {
+        grid-template-columns: 2fr 8fr;
+    }
+
+    .secTwo .quote .avatar {
+        width: 80%;
+        border-radius: 50%;
+        margin-top: 4px;
+        margin-left: 0;
+    }
+
+    .secTwo .quote .profil h2 {
+        font-size: 1em;
+        text-align: initial;
+    }
+
+    .secTwo .illustration2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25%;
+    }
+
+    .secTwo .illustration2 img {
+        max-width: 90%;
+    }
+
+    /******* SIGN SECTION ********/
+    .sign {
+        display: block;
+        padding: 20% 6%;
+    }
+
+    .sign .textBoxThree h1 {
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .sign .textBoxThree p {
+        color: #fff;
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .sign .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .sign .form input, .sign .form button {
+        width: 80%;
+    }
+
+    /******* FOOTER ********/
+    footer {
+        padding: 30% 12%;
+    }
+
+    footer .logoFooter {
+        width: 60%;
+        margin-bottom: 10%;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer .info {
+        margin: 20% 0;
+    }
+
 }
