@@ -27,10 +27,16 @@ body{
     max-width: 90px;
 }
 
+.navbar .menuBox{
+    width: 28%;
+}
+
 .navbar .menuBox li{
+    position: relative;
     float: left;
     padding: 15px;
     list-style: none;
+    margin: 0 4%;
 }
 
 .navbar .menuBox li a{
@@ -78,6 +84,7 @@ body{
     background-color: hsl(224, 93%, 58%);
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 .secOne .illustration1 img{
@@ -212,6 +219,13 @@ body{
     border: none;
     padding: 3% 0;
     margin-top: 15px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.sign .form button:hover{
+    background-color: #fff;
+    color: hsl(224, 93%, 58%);
 }
 
 /******* FOOTER ********/
@@ -264,6 +278,33 @@ footer .logoFooter{
     color: #fff;
     width: 16px;
     text-align: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.footer .sci .li-insta:hover{
+    background-color: #fff;
+}
+
+.footer .sci .li-twitter:hover{
+    background-color: #00acee;
+    border: 1px solid #00acee;
+}
+
+.footer .sci .li-fb:hover{
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+.footer .sci li:hover .fb, .twitter{
+    color: #fff ;
+}
+
+.footer .sci li:hover .insta{
+    background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 ::-webkit-input-placeholder{
